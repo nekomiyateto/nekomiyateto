@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLOG｜猫宮てと 公式サイト</title>
+  <meta name="description" content="猫耳VTuber「猫宮てと」の日記です。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="draft-notice">このサイトは制作中です。<span class="tag-temp">仮</span> の付いた内容は、あとで差し替える仮の内容です。</div>
+
+  <!-- ===== ヘッダー（全ページ共通） ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo.jpg" alt="猫宮てと" class="logo-img">
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="global-nav" class="global-nav" aria-label="メインメニュー">
+        <ul>
+          <li><a href="index.html">HOME <span class="ja">ホーム</span></a></li>
+          <li><a href="profile.html">PROFILE <span class="ja">プロフィール</span></a></li>
+          <li><a href="stream.html">STREAM <span class="ja">配信</span></a></li>
+          <li><a href="gallery.html">GALLERY <span class="ja">ギャラリー</span></a></li>
+          <li><a href="blog.html" aria-current="page">BLOG <span class="ja">日記</span></a></li>
+          <li><a href="link.html">LINK <span class="ja">リンク</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <div class="container section-head">
+        <h1 class="en">BLOG</h1>
+        <span class="ja">てとの日記</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-lead">お絵描きのことや、毎日のできごとを書いていきます。</p>
+
+        <!--
+          ★日記を書き足す方法
+            1. 下の <article class="post"> から </article> までをまるごとコピー
+            2. <div class="post-list"> のすぐ下（いちばん上）に貼り付け
+            3. 日付・タイトル・本文・タグを書き換える
+               ・段落を増やすときは <p>…</p> を増やす
+               ・画像を入れるときは <img src="images/画像の名前.png" alt="画像の説明"> を本文に入れる
+            4. 見本の記事は、本物の日記を書いたら消してOK
+        -->
+        <div class="post-list">
+
+          <article class="post">
+            <div class="post-meta">
+              <time class="post-date" datetime="2026-10-14">2026.10.14</time>
+              <span class="post-tag">お知らせ</span>
+            </div>
+            <h2 class="post-title">日記の見本です<span class="tag-temp">仮</span></h2>
+            <div class="post-body">
+              <p>これは日記ページの見本の記事です。本物の日記を書いたら、この記事は消してください。</p>
+              <p>段落を分けたいときは、このように新しい段落を追加します。</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ===== 感想の受付（マシュマロ） ===== -->
+        <div class="message-box">
+          <p class="message-box-title">💌 日記の感想を送ってね！</p>
+          <p>マシュマロで、匿名でメッセージを送れます。いただいたメッセージは、配信やSNSでお返事することがあります。</p>
+          <a href="https://marshmallow-qa.com/rf2mjn1uc3qnyag" class="btn btn-green" target="_blank" rel="noopener">マシュマロを送る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== フッター（全ページ共通） ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-name">猫宮てと</p>
+      <p class="footer-copy">「楽しい」をあなたにお届け！</p>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="profile.html">PROFILE</a></li>
+          <li><a href="stream.html">STREAM</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="link.html">LINK</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 猫宮てと</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
