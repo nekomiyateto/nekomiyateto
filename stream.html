@@ -96,37 +96,37 @@
       <div class="container">
         <div class="section-head">
           <h2 class="en">VIDEOS</h2>
-          <span class="ja">YouTube動画</span>
+          <span class="ja">ショート動画</span>
         </div>
+        <p class="section-lead">最近のお気に入りのショート動画です！</p>
 
         <!--
-          ★動画が公開されたら、以下のように書き換えます。
-            1. サムネイル：placeholder の div を <img src="images/サムネイル.jpg" alt="動画のタイトル"> に
-            2. ボタン：<span class="btn is-disabled" ...>準備中</span> を
-               <a href="ここにYouTube動画のURL" class="btn" target="_blank" rel="noopener">動画を見る</a> に
+          ★ショート動画を追加する方法
+            YouTubeの共有URL（例：https://youtube.com/shorts/DaLD4V9xLMY?si=…）の
+            「shorts/」と「?」の間の文字（例：DaLD4V9xLMY）が「動画ID」です。
+
+            1. 下の <a class="short-card" …> から </a> までをコピーして、いちばん上に貼り付け
+            2. 動画IDを3か所（href と、src と onerror の中）すべて書き換える
+            3. <h3 class="short-title"> の中のタイトルを書き換える
+            ※ ?si=… から後ろは記録用なので、URLには入れない
         -->
-        <div class="video-grid">
-          <div class="card video-card">
-            <div class="thumb">
-              <div class="placeholder">サムネイル 差し替え予定</div>
-            </div>
-            <h3>動画タイトル<span class="tag-temp">仮</span></h3>
-            <span class="btn is-disabled" aria-disabled="true">準備中</span>
-          </div>
-          <div class="card video-card">
-            <div class="thumb">
-              <div class="placeholder">サムネイル 差し替え予定</div>
-            </div>
-            <h3>動画タイトル<span class="tag-temp">仮</span></h3>
-            <span class="btn is-disabled" aria-disabled="true">準備中</span>
-          </div>
-          <div class="card video-card">
-            <div class="thumb">
-              <div class="placeholder">サムネイル 差し替え予定</div>
-            </div>
-            <h3>動画タイトル<span class="tag-temp">仮</span></h3>
-            <span class="btn is-disabled" aria-disabled="true">準備中</span>
-          </div>
+        <div class="short-grid">
+          <a class="short-card" href="https://www.youtube.com/shorts/DaLD4V9xLMY" target="_blank" rel="noopener">
+            <div class="short-thumb"><img src="https://i.ytimg.com/vi/DaLD4V9xLMY/oardefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/DaLD4V9xLMY/hqdefault.jpg'"><span class="short-badge">▶ Shorts</span></div>
+            <h3 class="short-title">Vtuber 作ってみた結果‼️</h3>
+          </a>
+          <a class="short-card" href="https://www.youtube.com/shorts/tnEFmKYtLvo" target="_blank" rel="noopener">
+            <div class="short-thumb"><img src="https://i.ytimg.com/vi/tnEFmKYtLvo/oardefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/tnEFmKYtLvo/hqdefault.jpg'"><span class="short-badge">▶ Shorts</span></div>
+            <h3 class="short-title">🐙 #イラスト #タコピーの原罪</h3>
+          </a>
+          <a class="short-card" href="https://www.youtube.com/shorts/ie8D1J1-uTQ" target="_blank" rel="noopener">
+            <div class="short-thumb"><img src="https://i.ytimg.com/vi/ie8D1J1-uTQ/oardefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/ie8D1J1-uTQ/hqdefault.jpg'"><span class="short-badge">▶ Shorts</span></div>
+            <h3 class="short-title">アクマバライ #イラスト</h3>
+          </a>
+          <a class="short-card" href="https://www.youtube.com/shorts/KSX1PRbuayg" target="_blank" rel="noopener">
+            <div class="short-thumb"><img src="https://i.ytimg.com/vi/KSX1PRbuayg/oardefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/KSX1PRbuayg/hqdefault.jpg'"><span class="short-badge">▶ Shorts</span></div>
+            <h3 class="short-title">初描きユキちゃん！ #イラスト</h3>
+          </a>
         </div>
 
         <div class="center">
