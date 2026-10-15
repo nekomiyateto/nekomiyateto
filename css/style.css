@@ -771,22 +771,6 @@ ul {
   clip-path: polygon(0 0, 100% 0, 20% 100%);
 }
 
-.challenge-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  max-width: 800px;
-  margin: 56px auto 0;
-}
-
-.challenge-list li {
-  padding: 18px;
-  border-radius: 18px;
-  background: var(--yellow-pale);
-  font-weight: 800;
-  text-align: center;
-}
-
 /* ---------- STREAM ---------- */
 .schedule-list {
   display: grid;
