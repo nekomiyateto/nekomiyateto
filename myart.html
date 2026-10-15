@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MY ART｜猫宮てと 公式サイト</title>
+  <meta name="description" content="猫耳VTuber「猫宮てと」が描いたイラスト作品集です。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="draft-notice">このサイトは制作中です。<span class="tag-temp">仮</span> の付いた内容は、あとで差し替える仮の内容です。</div>
+
+  <!-- ===== ヘッダー（全ページ共通） ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo.jpg" alt="猫宮てと" class="logo-img">
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="global-nav" class="global-nav" aria-label="メインメニュー">
+        <ul>
+          <li><a href="index.html">HOME <span class="ja">ホーム</span></a></li>
+          <li><a href="profile.html">PROFILE <span class="ja">プロフィール</span></a></li>
+          <li><a href="stream.html">STREAM <span class="ja">配信</span></a></li>
+          <li><a href="gallery.html">GALLERY <span class="ja">ギャラリー</span></a></li>
+          <li><a href="myart.html" aria-current="page">MY ART <span class="ja">作品集</span></a></li>
+          <li><a href="link.html">LINK <span class="ja">リンク</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <div class="container section-head">
+        <h1 class="en">MY ART</h1>
+        <span class="ja">作品集</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-lead">てとが描いたイラスト作品をまとめた作品集です。画像をクリックすると大きく表示されます。</p>
+
+        <!--
+          ★作品を追加する方法
+            1. 作品の画像を images/myart フォルダに入れる（例：art01.png）
+               ※ファイル名は半角英数字で、スペースを入れない
+            2. 下の「作品のひな形」の <figure> から </figure> までをコピーして、
+               <div class="art-grid"> のすぐ下（いちばん上）に貼り付け
+            3. 画像のファイル名・タイトル・制作日・使用ツール・コメントを書き換える
+            4. 見本の作品（「仮」の付いたもの）は、本物の作品を載せたら消してOK
+
+          ===== 作品のひな形（これをコピーして使う） =====
+          <figure class="art-card">
+            <a class="art-image" href="images/myart/art01.png"><img src="images/myart/art01.png" alt="作品タイトル"></a>
+            <figcaption>
+              <h2 class="art-title">作品タイトル</h2>
+              <dl class="art-info">
+                <dt>制作日</dt><dd>2026.10</dd>
+                <dt>ツール</dt><dd>使ったソフトなど</dd>
+              </dl>
+              <p class="art-comment">作品についてのひとこと</p>
+            </figcaption>
+          </figure>
+          =============================================
+        -->
+        <div class="art-grid">
+
+          <figure class="art-card">
+            <div class="art-image"><div class="placeholder">作品 差し替え予定</div></div>
+            <figcaption>
+              <h2 class="art-title">作品タイトル<span class="tag-temp">仮</span></h2>
+              <dl class="art-info">
+                <dt>制作日</dt><dd>未記入</dd>
+                <dt>ツール</dt><dd>未記入</dd>
+              </dl>
+              <p class="art-comment">ここに作品についてのひとことが入ります。</p>
+            </figcaption>
+          </figure>
+
+          <figure class="art-card">
+            <div class="art-image"><div class="placeholder">作品 差し替え予定</div></div>
+            <figcaption>
+              <h2 class="art-title">作品タイトル<span class="tag-temp">仮</span></h2>
+              <dl class="art-info">
+                <dt>制作日</dt><dd>未記入</dd>
+                <dt>ツール</dt><dd>未記入</dd>
+              </dl>
+              <p class="art-comment">ここに作品についてのひとことが入ります。</p>
+            </figcaption>
+          </figure>
+
+          <figure class="art-card">
+            <div class="art-image"><div class="placeholder">作品 差し替え予定</div></div>
+            <figcaption>
+              <h2 class="art-title">作品タイトル<span class="tag-temp">仮</span></h2>
+              <dl class="art-info">
+                <dt>制作日</dt><dd>未記入</dd>
+                <dt>ツール</dt><dd>未記入</dd>
+              </dl>
+              <p class="art-comment">ここに作品についてのひとことが入ります。</p>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== フッター（全ページ共通） ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-name">猫宮てと</p>
+      <p class="footer-copy">「楽しい」をあなたにお届け！</p>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="profile.html">PROFILE</a></li>
+          <li><a href="stream.html">STREAM</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="myart.html">MY ART</a></li>
+          <li><a href="link.html">LINK</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 猫宮てと</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <!-- 訪問者数の集計（GoatCounter）。管理画面：https://nekomiyateto.goatcounter.com -->
+  <script data-goatcounter="https://nekomiyateto.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
