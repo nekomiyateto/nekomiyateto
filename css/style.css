@@ -890,6 +890,63 @@ ul {
   text-align: center;
 }
 
+/* ---------- 注意書き・ファンアートの案内 ---------- */
+.notice-box {
+  max-width: 800px;
+  margin: -8px auto 40px;
+  padding: 22px 28px;
+  border: 2px dashed var(--orange);
+  border-radius: var(--radius);
+  background: var(--white);
+  text-align: center;
+}
+
+.notice-box p {
+  margin: 0 0 10px;
+}
+
+.notice-box p:last-child {
+  margin-bottom: 0;
+}
+
+.notice-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.fanart-tag {
+  display: inline-block;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--yellow);
+  color: var(--text);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.fanart-tag:hover {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.notice-small {
+  color: var(--text-sub);
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+
+/* フッターの注意書き */
+.footer-notice {
+  max-width: 640px;
+  margin: 0 auto 16px;
+  padding: 8px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text);
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
 /* ---------- GALLERY ---------- */
 .gallery-grid {
   display: grid;
