@@ -549,6 +549,17 @@ ul {
   border-top: 2px dashed var(--line);
 }
 
+.news-list li[hidden] {
+  display: none;
+}
+
+/* 「もっと見る」ボタン */
+.news-more {
+  display: flex;
+  margin: 28px auto 0;
+  cursor: pointer;
+}
+
 .news-date {
   color: var(--text-sub);
   font-size: 0.9rem;

@@ -17,6 +17,33 @@ if (header && menuButton) {
   });
 }
 
+// ---------- お知らせの「もっと見る」 ----------
+// <ul class="news-list" data-show="3"> の数字の件数だけ最初に表示し、残りはボタンで開く
+const newsList = document.querySelector(".news-list[data-show]");
+
+if (newsList) {
+  const showCount = Number(newsList.dataset.show);
+  const extraItems = [...newsList.children].slice(showCount);
+
+  if (extraItems.length > 0) {
+    extraItems.forEach((item) => (item.hidden = true));
+
+    const moreButton = document.createElement("button");
+    moreButton.type = "button";
+    moreButton.className = "btn btn-sub news-more";
+    moreButton.textContent = "もっと見る";
+    moreButton.setAttribute("aria-expanded", "false");
+    newsList.after(moreButton);
+
+    moreButton.addEventListener("click", () => {
+      const isOpen = moreButton.getAttribute("aria-expanded") === "true";
+      extraItems.forEach((item) => (item.hidden = isOpen));
+      moreButton.setAttribute("aria-expanded", String(!isOpen));
+      moreButton.textContent = isOpen ? "もっと見る" : "閉じる";
+    });
+  }
+}
+
 // ---------- 画像の拡大表示 ----------
 // GALLERY：<a class="gallery-item" href="画像"> の形で置いた画像
 // MY ART ：<a class="art-image" href="画像"> の形で置いた画像（タイトルとコメントも表示）
